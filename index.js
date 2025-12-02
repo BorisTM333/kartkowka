@@ -24,3 +24,36 @@ for (let book of books) {
 
 console.log(" ");
 
+let dostępne =0;
+let unavailable = 0;
+for (var i=0; i < books.length; i++) {
+    if (books[i].available) {
+        dostępne++;
+    }
+    else {
+        unavailable++;
+    }
+
+
+
+
+
+}
+if (!books.available) {;
+    console.log("Dostępnych jest: " + dostępne);
+    console.log("Niedostępnych jest: " + unavailable);
+
+
+    let searchAuthor = "George Orwell";
+
+    i=0
+    let found = 0;
+    while (i<7) {
+        if (books.author === searchAuthor) {
+            console.log("Found " +books[i].title);
+            found++;
+
+        }
+        i++;
+    }
+}
